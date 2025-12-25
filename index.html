@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shwet Kulkarni | Data Science & AI for Impact</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Enable smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 
+      Header / Navigation
+      - Sticky to the top for easy navigation.
+      - Semi-transparent blur for a modern aesthetic.
+    -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md shadow-sm">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Name -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-gray-900">Shwet Kulkarni</a>
+                </div>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">Projects</a>
+                    <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- 
+          Section 1: Hero
+          - Full-screen welcome section.
+          - Clearly states the "Life Mission" from your document.
+        -->
+        <section id="home" class="min-h-screen flex items-center bg-white py-24 sm:py-32">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Text Content -->
+                    <div class="text-center md:text-left">
+                        <span class="text-blue-600 font-semibold uppercase">Hello, I'm</span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 mt-2">
+                            Shwet Kulkarni
+                        </h1>
+                        <p class="mt-4 text-xl sm:text-2xl text-gray-600">
+                            Aspiring Data Scientist & AI Engineer
+                        </p>
+                        
+                        <!-- Life Mission Quote -->
+                        <div class="mt-8 border-l-4 border-blue-500 pl-4">
+                            <p class="text-lg text-gray-700 italic">
+                                "My mission is to leverage data science and AI to build predictive models that solve complex global challenges... promoting environmental sustainability, and make data-driven insights accessible for a better, more equitable world."
+                            </p>
+                        </div>
+                        
+                        <!-- Call-to-Action Buttons -->
+                        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="#projects" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transform hover:scale-105 transition-all duration-200">
+                                View My Projects
+                            </a>
+                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-100 shadow-lg transform hover:scale-105 transition-all duration-200">
+                                Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Image -->
+                    <div class="hidden md:block">
+                        <img 
+                            class="rounded-lg shadow-2xl object-cover w-full h-full" 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                            alt="Abstract data visualization charts and graphs"
+                            onerror="this.src='https://placehold.co/600x400/3b82f6/white?text=Data+Visualization'; this.onerror=null;"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Section 2: About Me & Academics
+          - Connects your passion (narrative) with your qualifications (proof).
+        -->
+        <section id="about" class="py-24 sm:py-32">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">About Me</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        My journey is driven by a passion to apply data science for tangible, positive change in public health and environmental sustainability.
+                    </p>
+                </div>
+                
+                <div class="mt-20 grid md:grid-cols-2 gap-16 items-start">
+                    <!-- Narrative / "My Why" -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900">From Curiosity to Conviction</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            My interest in data-driven solutions was first sparked by the <strong class="text-gray-900">KRUU Project-Based Learning program</strong>, where I tackled real-world challenges in public health logistics. This hands-on experience with vaccine distribution models showed me the power of data in solving complex human problems.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            To build a strong technical foundation, I completed the <strong class="text-gray-900">IIT Madras 8-week certification in Data Science and AI</strong>. This rigorous course solidified my skills and prepared me to build the predictive models I envision.
+                        </bodytext-gray-700>
+                        <p class="text-gray-700 leading-relaxed">
+                            Now, I am eager to bring this combination of practical experience and academic knowledge to a world-class university.
+                        </p>
+                    </div>
+                    
+                    <!-- Key Qualifications -->
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Key Qualifications</h3>
+                        <ul class="space-y-5">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </span>
+                                <div>
+                                    <strong class="text-gray-900">Academic Excellence:</strong>
+                                    <span class="text-gray-700 block">Class 12 Projected: 95% (Math), 95% (Physics), 95% (Computer Science)</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </span>
+                                <div>
+                                    <strong class="text-gray-900">Language Proficiency:</strong>
+                                    <span class="text-gray-700 block">IELTS Score: 7.5</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </span>
+                                <div>
+                                    <strong class="text-gray-900">Core Technical Skills:</strong>
+                                    <span class="text-gray-700 block">Python, SQL, Matplotlib, Data Analysis, AI Modeling Principles</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </span>
+                                <div>
+                                    <strong class="text-gray-900">Certifications:</strong>
+                                    <span class="text-gray-700 block">IIT Madras (Data Science & AI), KRUU (Eminence & Merit)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Section 3: Projects & Experience
+          - A card-based grid showcasing all your projects and experiences.
+          - Uses links and placeholder images as requested.
+        -->
+        <section id="projects" class="py-24 sm:py-32 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Projects & Experience</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        Here's a selection of my work and learning initiatives.
+                    </p>
+                </div>
+                
+                <!-- Project Cards Grid -->
+                <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- Project Card 1: Real Estate Analyzer -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/0284c7/white?text=Real+Estate+Analyzer" alt="Real Estate Analyzer Project">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-blue-700">PRACTICAL PROJECT (CLASS 12)</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">Real Estate Management System</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                A Python-based tool using SQL, Matplotlib, and statistics to analyze market health, compare properties, and provide data-driven insights for real estate.
+                            </p>
+                            <div class="mt-6">
+                                <a href="https://github.com/shwet-kulkarni/real-estate-analyzer" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:text-blue-500 inline-flex items-center">
+                                    View Code on GitHub
+                                    <svg class="ml-1.5 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2: KRUU Project -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/16a34a/white?text=Public+Health+Project" alt="KRUU Public Health Response Platform">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-green-700">PROJECT-BASED LEARNING</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">Public Health Response Platform</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                A project with KRUU focused on understanding real-world challenges in vaccine distribution and public health logistics. Received Certificates of Eminence and Merit.
+                            </p>
+                            <div class="mt-6">
+                                <a href="https://getkruu.com/portfolio/public-health-response-platform/" target="_blank" rel="noopener noreferrer" class="font-medium text-green-600 hover:text-green-500 inline-flex items-center">
+                                    View Project Details
+                                    <svg class="ml-1.5 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 3: IIT Madras -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/7c3aed/white?text=IIT+Madras+Certification" alt="IIT Madras Data Science & AI Course">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-purple-700">PROFESSIONAL CERTIFICATION</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">Data Science & AI (IIT Madras)</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                Completed an 8-week certification course from IIT Madras, covering foundational and advanced concepts in data science and artificial intelligence.
+                            </p>
+                            <div class="mt-6">
+                                <a href="https://code.iitm.ac.in/schoolconnect/course-details?course=ds" target="_blank" rel="noopener noreferrer" class="font-medium text-purple-600 hover:text-purple-500 inline-flex items-center">
+                                    View Course Details
+                                    <svg class="ml-1.5 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 4: ISP Scientists -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/f59e0b/white?text=Sustainability+Project" alt="ISP Scientists ILOS Programme">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-amber-700">SUSTAINABILITY INITIATIVE</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">ISP Scientists (ILOS Programme)</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                A student-led initiative focused on calculating and reducing carbon footprints. Engaged as a citizen scientist to promote environmental behavioral changes.
+                            </p>
+                            <div class="mt-6">
+                                <a href="https://theindianpublicschool.org/ilos/" target="_blank" rel="noopener noreferrer" class="font-medium text-amber-600 hover:text-amber-500 inline-flex items-center">
+                                    Learn About ILOS
+                                    <svg class="ml-1.5 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 5: Self-Learning -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/374151/white?text=AI+Self-Study" alt="AI and Machine Learning Self-Study">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-gray-700">CONTINUOUS LEARNING</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">AI/ML Self-Study</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                Actively learning from industry leaders like Andrej Karpathy (Neural Networks) and Andrew Ng (DeepLearning.ai) to stay at the forefront of AI advancements.
+                            </p>
+                            <div class="mt-6 space-x-4">
+                                <a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" rel="noopener noreferrer" class="font-medium text-gray-600 hover:text-gray-900 inline-flex items-center">
+                                    Karpathy
+                                    <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                                <a href="https://www.deeplearning.ai/" target="_blank" rel="noopener noreferrer" class="font-medium text-gray-600 hover:text-gray-900 inline-flex items-center">
+                                    Andrew Ng
+                                    <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 6: Extracurriculars -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                        <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/ec4899/white?text=Beyond+Academics" alt="Extracurricular activities: Volleyball, Cycling, Trekking">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm font-semibold text-pink-700">BEYOND ACADEMICS</span>
+                            <h3 class="mt-2 text-xl font-bold text-gray-900">Leadership & Personal Pursuits</h3>
+                            <p class="mt-3 text-gray-600 flex-grow">
+                                Beyond the screen, I'm a passionate cyclist (Danube river tour), trekker (Himalayas), and team player (1st in Inter-House Volleyball). I also apply my organizational skills, having helped facilitate school council elections.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!--         
+         
+          Section 4: Why Netherlands?
+          - This directly addresses the goal of your application.
+        
+        <section id="netherlands" class="py-24 sm:py-32">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <img src="https://placehold.co/100x60/f97316/white?text=🇳🇱" alt="Flag of the Netherlands" class="mx-auto h-16 w-auto rounded-md" 
+                     onerror="this.src='https://placehold.co/100x60/f97316/white?text=NL'; this.onerror=null;">
+                <h2 class="mt-8 text-3xl sm:text-4xl font-extrabold text-gray-900">My Focus: The Netherlands</h2>
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    I am specifically drawn to the Netherlands for its world-class universities, pioneering research in AI and sustainability, and its collaborative, forward-thinking culture. I believe it's the perfect environment to grow my skills and contribute to building a better, data-driven future.
+                </p>
+            </div>
+        </section>
+-->
+        <!-- 
+          Section 5: Contact
+          - Simple, clear contact links.
+        -->
+        <section id="contact" class="py-24 sm:py-32 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Get in Touch</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    I'm excited to discuss my qualifications and how I can contribute to your university community.
+                </p>
+                
+                <div class="mt-12 flex flex-col sm:flex-row gap-8 justify-center">
+                    <!-- Email -->
+                    <div class="flex items-center gap-3 justify-center">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <a href="mailto:shwetkulkarni5@gmail.com" class="text-lg text-gray-700 hover:text-blue-600 font-medium">shwetkulkarni5@gmail.com</a>
+                    </div>
+                    
+                    <!-- GitHub -->
+                    <div class="flex items-center gap-3 justify-center">
+                         <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.602-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.645.35-1.087.636-1.338-2.22-.251-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.685-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.548 9.548 0 0112 6.84a9.548 9.548 0 012.502.336c1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.203 2.394.1 2.647.64.701 1.028 1.594 1.028 2.685 0 3.843-2.337 4.687-4.565 4.935.359.307.678.915.678 1.846 0 1.338-.012 2.419-.012 2.746 0 .267.18.577.688.48C19.137 20.165 22 16.418 22 12A10 10 0 0012 2z" clip-rule="evenodd"></path></svg>
+                        <a href="https://github.com/shwet-kulkarni" target="_blank" rel="noopener noreferrer" class="text-lg text-gray-700 hover:text-blue-600 font-medium">github.com/shwet-kulkarni</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      Footer
+      - Simple, clean footer.
+    -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <p class="text-gray-500">
+                &copy; 2025 Shwet Kulkarni. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
